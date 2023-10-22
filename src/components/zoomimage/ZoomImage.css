@@ -1,0 +1,96 @@
+.zoom-container {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+  }
+  
+.zoom-container img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.area-clickable {
+    cursor: inherit;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes shakeZoom {
+    0% {
+        transform: scale(1);
+    }
+    
+    2% {
+        transform: scale(1.2) translateY(10px);
+    }
+    4%, 6% {
+        transform: scale(1.4) translateY(-10px);
+    }
+    
+    8% {
+        transform: scale(1.6) translateY(10px);
+    }
+    10%, 12% {
+        transform: scale(1.8) translateY(-10px);
+    }
+    
+    14% {
+        transform: scale(2.0) translateY(10px);
+    }
+    16%, 18% {
+        transform: scale(2.2) translateY(-10px);
+    }
+    
+    20% {
+        transform: scale(2.4) translateY(10px);
+    }
+    22%, 24% {
+        transform: scale(2.6) translateY(-10px);
+    }
+    
+    26% {
+        transform: scale(2.8) translateY(10px);
+    }
+    28%, 30% {
+        transform: scale(3.0) translateY(-10px);
+    }
+    
+    32% {
+        transform: scale(3.2) translateY(10px);
+    }
+    34%, 36% {
+        transform: scale(3.4) translateY(-10px);
+    }
+    
+    38% {
+        transform: scale(3.6) translateY(10px);
+    }
+    40%, 42% {
+        transform: scale(3.8) translateY(-10px);
+    }
+    
+    44% {
+        transform: scale(4.0) translateY(10px);
+    }
+    46%, 48% {
+        transform: scale(4.2) translateY(-10px);
+        opacity: 1;
+    }
+    
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}

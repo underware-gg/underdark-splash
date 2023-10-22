@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foregroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1; /* Adjust this value as necessary to ensure it's on top of other content */
+    background-image: url("../../media/giphy.gif");
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    opacity: 0.1
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50%;
+}
+
+.textContainer {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(227, 117, 255, 0.19);
+    color: #42ff00;
+    font-size: 1.6rem; 
+    letter-spacing: 0.06em;
+    padding-left: 40px;
+    padding-right: 40px;
+    filter: blur(1.5px);
+    line-height: 1.5;
+    font-family: 'Delius Unicase';
+}
+
+.verse {
+    margin-bottom: 1em; /* space between verses */
+}
+
+/* Media query for mobile responsiveness (optional) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 70%;
+    }
+    .textContainer {
+        font-size: 1.2rem;
+    }
+}

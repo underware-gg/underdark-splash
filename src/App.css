@@ -1,0 +1,24 @@
+.App {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  cursor: url("media/torchy.png") 0 0, auto;
+}
+
+.fade-enter,
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fade-enter-active,
+.fade-exit {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+body {
+  background-color: black;
+  cursor: url("media/torchy.png") 0 0, auto;
+}
