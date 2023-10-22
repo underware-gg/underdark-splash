@@ -25,6 +25,9 @@ function DungeonEntrance() {
                 requestAnimationFrame(fade);
             } else {
                 audioRef.current.volume = targetVolume;
+                setTimeout(() => {
+                    window.location.href = 'https://underdark.vercel.app/';
+                }, 2500)
             }
         };
 
